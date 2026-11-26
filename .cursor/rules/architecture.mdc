@@ -1,0 +1,14 @@
+---
+description: Invariantes do monólito modular AtendeAI
+alwaysApply: true
+---
+
+# Arquitetura
+
+Monólito modular. Hexagonal. DDD por módulo. CQRS só quando a leitura pedir outro modelo.
+
+- Dependência: adapters → application → domain.
+- Domínio não importa Spring, JPA, HTTP, cliente de WhatsApp nem SDK de IA.
+- Módulo não acessa tabela, entidade ou repositório de outro módulo.
+- Chamada síncrona: porta de aplicação. Fato assíncrono: domain event.
+- Abra `docs/adr/` ou `docs/architecture/` só quando a tarefa mudar fronteira ou stack. O índice está em `ai-toolkit-atende/knowledge/INDEX.md`.

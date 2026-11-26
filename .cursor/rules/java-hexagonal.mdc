@@ -1,0 +1,14 @@
+---
+description: Pacotes hexagonais e domínio sem framework
+globs: "**/*.java"
+alwaysApply: false
+---
+
+# Java
+
+Pacote `com.atendeai.<módulo>` com `domain`, `application`, `adapters` e `configuration`.
+
+- `domain` não referencia Spring, Jakarta Persistence, web nem SDK externo.
+- Caso de uso fica em `application/usecase` e depende de portas.
+- Adapter traduz o mundo externo e não contém regra de negócio.
+- Teste de domínio em `src/test/java/.../domain`, sem contexto Spring.
