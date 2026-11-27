@@ -19,3 +19,13 @@ Estrutura arquitetural inicial — sem regras de negócio implementadas.
 Identity & Access, WhatsApp, AI/Atendimento, CRM/Leads, Scheduling, Follow-up, Analytics, Billing e Onboarding.
 
 Veja [ARCHITECTURE.md](ARCHITECTURE.md) e [MODULES.md](MODULES.md).
+
+## Contexto de IA
+
+A fonte é [ai-toolkit-minions](https://github.com/alissoncruz/ai-toolkit-minions). A cópia que o Cursor lê neste repositório está em `.cursor/` e em `AGENTS.md`.
+
+Para atualizar a cópia, na raiz do toolkit:
+
+```bash
+scripts/sync-into-project.sh /caminho/deste/produto
+```

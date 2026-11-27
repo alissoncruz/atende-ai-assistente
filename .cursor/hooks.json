@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "hooks": {
+    "preToolUse": [
+      {
+        "command": "python3 .cursor/hooks/model-cost-guard.py pre-tool",
+        "matcher": "Task"
+      }
+    ],
+    "subagentStart": [
+      {
+        "command": "python3 .cursor/hooks/model-cost-guard.py subagent-start"
+      }
+    ]
+  }
+}
