@@ -22,4 +22,10 @@ Veja [ARCHITECTURE.md](ARCHITECTURE.md) e [MODULES.md](MODULES.md).
 
 ## Contexto de IA
 
-Regras, skills e o gancho de modelo do Cursor estão no repositório exclusivo [ai-toolkit-minions](https://github.com/alissoncruz/ai-toolkit-minions).
+A fonte é [ai-toolkit-minions](https://github.com/alissoncruz/ai-toolkit-minions). A cópia que o Cursor lê neste repositório está em `.cursor/` e em `AGENTS.md`.
+
+Para atualizar a cópia, na raiz do toolkit:
+
+```bash
+scripts/sync-into-project.sh /caminho/deste/produto
+```

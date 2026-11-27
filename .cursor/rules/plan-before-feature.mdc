@@ -1,0 +1,12 @@
+---
+description: Feature nova começa por um plano, sem código
+alwaysApply: true
+---
+
+# Plano antes da feature
+
+Feature, caso de uso ou módulo novo: use a skill `plan-feature`, grave o plano com `Status: proposto` e pare.
+
+Código dessa feature só começa se o plano em `plans/` tiver a linha `Status: aceito`. Quem muda essa linha é a pessoa. O agente não aceita o plano.
+
+Tarefa simples não tem plano: typo, rename, um arquivo, formatação, POM ou texto curto. Faça direto.

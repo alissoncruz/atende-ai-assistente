@@ -1,0 +1,15 @@
+---
+description: Economia de tokens e modelos em tarefa simples
+alwaysApply: true
+---
+
+# Economia de tokens
+
+Tarefa simples: typo, rename, um arquivo, formatação, POM, texto curto, value object ou teste de domínio isolado. Feature nova segue `plan-before-feature`.
+
+- Faça no próprio turno. Não abra subagente.
+- Não passe modelo no Task. Se um subagente for inevitável, use `composer-2.5`.
+- Proibido em tarefa simples: Opus, Fable, GPT-5, variante `fast`, `xhigh`, `max`, e Sonnet `high`.
+- Linha `complexidade: alta` só para fronteira entre módulos ou bug sem causa óbvia. Linha `modelo-pedido` só se a pessoa pediu um modelo pelo nome. As duas vão sozinhas, numa linha.
+- Leia o índice em `knowledge/INDEX.md` e abra só o arquivo indicado.
+- Resposta curta. Diff só do que a tarefa pede.

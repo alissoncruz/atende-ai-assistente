@@ -1,0 +1,13 @@
+---
+description: POM do reator e relativePath do parent
+globs: "**/pom.xml"
+alwaysApply: false
+---
+
+# Maven
+
+Parent `com.atendeai:atendeai:0.1.0-SNAPSHOT`.
+
+- Módulo em `modules/*` ou `apps/api` declara `<relativePath>../../pom.xml</relativePath>` dentro de `<parent>`.
+- Novo módulo entra na lista `<modules>` do `pom.xml` da raiz.
+- Domínio não ganha dependência de framework. Dependência de infra fica no adapter ou em `apps/api`.
